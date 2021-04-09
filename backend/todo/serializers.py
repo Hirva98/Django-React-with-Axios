@@ -6,10 +6,10 @@ from .models import Rooms
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = ('id', 'title', 'description', 'completed')
+        fields = ('id', 'title', 'description')
 
 class RoomsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Rooms
-        fields = ('room_name', 'genre' )
+        fields = ('id','room_name', 'genre' )

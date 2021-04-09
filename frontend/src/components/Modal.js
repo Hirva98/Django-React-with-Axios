@@ -5,17 +5,18 @@ const Modal = () => {
     
     const [roomName,setRoomName] = useState()
     const [roomGenre,setGenre] = useState()
+    
     const insertData = () => {
         var data ={
-            roomName : roomName,
-            roomGenre : roomGenre
+            room_name : roomName,
+            genre : roomGenre
         }
-        Axios.post('http://localhost:8000/api/add/' , data)
+        Axios.post('http://localhost:8000/api/adds/' , data)
         .then(res => {
               
                 console.log('hi')
-                setRoomName("")
-                setGenre("")
+                setRoomName('')
+                setGenre('')
         })
     .catch(er => console.log(er))
     

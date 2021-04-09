@@ -15,8 +15,5 @@ class Rooms(models.Model):
     room_name = models.CharField(max_length=255)
     genre = models.CharField(max_length=255)
 
-    class Meta:
-      verbose_name_plural = "rooms"
-
     def str(self):
         return self.room_name

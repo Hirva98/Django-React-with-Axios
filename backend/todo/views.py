@@ -17,6 +17,7 @@ class RoomView(viewsets.ModelViewSet):
     serializer_class = RoomsSerializer
     queryset = Rooms.objects.all()
 
+
 def submitpage(request):
     data = request.POST.get('data')
    

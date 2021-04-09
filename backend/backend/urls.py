@@ -19,8 +19,9 @@ from rest_framework import routers
 from todo import views
 
 router = routers.DefaultRouter()
-#router.register(r'todos', views.TodoView, 'todo')
-router.register(r'add/', views.RoomView, 'add')
+router.register(r'adds', views.RoomView, 'todo')
+#router.register(r'adds', views.RoomView, 'add')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
